@@ -1,0 +1,70 @@
+This demo is for normal kivy/kivymd app execution. May package this example to a zip file including venv folder with all libraries.
+1) Install python3.10.10 or python3.10.11 by web search
+2) Create a desired directory/folder
+    Navigate to the desired directory eg cd:\User\xxx\Documents\xxx
+    Add this directory to workspace (if using vs code)
+3) Create a virtual environment with any name (in this eg "venv") in the directory/folder created by executing:
+    python -m venv venv
+4) Activate virtual environment by executing the following command
+    .\venv\Scripts\activate
+    "green parenthesis with venv will appear next to directory in terminal window"
+5) Install the following python packages:
+    pip install kivy
+    pip install kivymd
+    pip install kaki
+This does not have a kaki hotreload function although installed
+6) Run the app using one of the following commands
+    Play button on vscode/or any IDE
+    or 
+    python .\main.py
+    or
+    $env:DEBUG=1; python .\main.py. 
+7) Returns 
+    A window named "main"
+    Displays button widget from 0 to 9 and A, B, C buttons. 
+    Press A button to return a print statement in terminal.
+
+Optional
+8) Deactivate virtual environment (if needed) by executing the following command in terminal
+    deactivate
+
+Git version control
+1) Once terminal is pointing to the desired/working directory
+    git init
+2) Create a .gitignore file (if required)
+    eg of .gitignore file and folder extensions
+        /POS
+        *.yaml
+        /buildozer
+        /venv
+        *liveHR.py
+        *.rar
+3) Git status
+    git status
+    Returns the following files (in red colour) in this example
+        .gitignore
+        README
+        main.py
+        main.kv
+4) To add all staged files 
+    git add .
+    Returns the following files (in green colour) in this example
+        .gitignore
+        README
+        main.py
+        main.kv
+    4.1) To add individual files (remove <>)
+        git add <file name> 
+    4.2) To unstage/remove all staged files 
+        git reset 
+        or
+        "git rm --cached <file>..." to unstage
+5) To make first commit locally to git verison control
+    git commit -m "xxx" -m "xxx"
+
+Optional
+6) Combine step 4 an 5 by executing the following command in terminal
+    git commit -am "xxx" 
+
+Provisional git commit
+Next tutorial will use step 6 and with multiple .kv and .py files. Eg screen1.py, screen1.kv. May use python kivy.uix.screenmanager package.

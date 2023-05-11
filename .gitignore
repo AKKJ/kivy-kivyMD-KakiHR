@@ -1,0 +1,6 @@
+/POS
+*.yaml
+/buildozer
+/venv
+*liveHR.py
+*.rar
